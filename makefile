@@ -6,6 +6,7 @@ hello_world: hello_world.cpp
 	chmod 733 hello_world
 
 make test:
+	chmod 777 expect_test
 	./expect_test	
 
 clean: 
