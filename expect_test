@@ -1,0 +1,7 @@
+#!/usr/bin/expect
+send "starting target program\n" 
+spawn ./hello_world
+set timeout 1
+expect "hello world\r" { send_user "pass\n"; exit; }
+send_user "fail\n"
+exit 1;
