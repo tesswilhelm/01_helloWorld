@@ -3,10 +3,10 @@ all: hello_world
 hello_world: hello_world.cpp
 	g++ -g --std=c++17 -c hello_world.cpp
 	g++ -g -o hello_world hello_world.o
-	chmod 733 hello_world
+	chmod 773 hello_world
 
-make test:
-	chmod 777 expect_test
+make test: all
+	chmod 773 expect_test
 	./expect_test	
 
 clean: 
