@@ -10,4 +10,4 @@ make test: all
 	./expect_test	
 
 clean: 
-	rm hello_world hello_world.o
+	-rm -f hello_world hello_world.o

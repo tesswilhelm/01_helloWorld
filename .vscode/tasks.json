@@ -36,6 +36,16 @@
         },
         {
             "type": "shell",
+            "label": "Test with make and Expect",
+            "detail": "Build project with make and test with Expect",
+            "command": "make test",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+
+        {
+            "type": "shell",
             "label": "Clean with make",
             "command": "make clean",
             "problemMatcher": [
